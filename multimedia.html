@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Dublin | Multimedia</title>
+    <meta name="author" content="André Carvalho">
+    <meta name="description" content="Tudo sobre Dublin">
+    <meta name="keywords" content="Dublin">
+    <link rel="stylesheet" href="estilos.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <ul>
+                    <li>
+                        <a href="index.html">🌏 Introdução</a>
+                    </li>
+                    <li>
+                        <a href="local.html">🗺️ Local</a>
+                    </li>
+                    <li>
+                        <a href="multimedia.html">📷 <b>Multimedia</b></a>
+                    </li>
+                    <li>
+                        <a href="info.html">🪪 Informação</a>
+                    </li>
+                    <li>
+                        <a href="quizz.html">🧪 Quizz</a>
+                    </li>
+                    <li>
+                        <a href="html5-css.html">👌 HTML5 e CSS</a>
+                    </li>
+                    <li>
+                        <a href="lab_3/index.html">📐 Lab 3</a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section style="padding-top: 6rem;">
+            <h1>Dublin</h1>
+        </section>
+        <section>
+            <h3>Multimedia</h3>
+            <a href="multimedia.html#video">Video</a>
+            <a href="multimedia.html#fotografias">Fotografias</a>
+            <a href="multimedia.html#poema">Poema</a>
+        </section>
+        <section>
+            <figure>
+                <h3 id="video">Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LcKnx7I97yk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <details>
+                    <figcaption>Video sobre a Cidade de Dublin - Irlanda</figcaption>
+                </details>
+            </figure>
+        </section>
+        <section>
+            <h3 id="fotografias">Fotografias</h3>
+            <p>Abaixo podemos ver 3 fotografias da cidade de Dublin, alguns pontos turísticos da cidade.</p>
+            <div class="wrapper-galeria wrapper-galeria--no-resize">
+                <a href="images/img_1_grande.jpg" target="foto">
+                    <img src="images/img_1_pequena.jpg" alt="Cidade de Dublin - Irlanda - Ponte Harpa" loading="lazy">
+                </a>
+                <a href="images/img_2_grande.jpg" target="foto">
+                    <img src="images/img_2_pequena.jpg" alt="Cidade de Dublin - Irlanda" loading="lazy">
+                </a>
+                <a href="images/img_3_grande.jpg" target="foto">
+                    <img src="images/img_3_pequena.jpg" alt="Cidade de Dublin - Temple Bar" loading="lazy">
+                </a>
+            </div>
+            <!-- No enunciado diz que as fotos grandes deve tem 600x400 e depois diz que o iframe deve ter 800x600 ... fiz com as
+        primeiras dimenções penso que é o que faz sentido -->
+            <iframe class="default-margin-top" width="600px" height="400px" name="foto"></iframe>
+        </section>
+        <section>
+            <h3 id="poema">Poema</h3>
+            <h4>Dublin</h4>
+            <h5>Louis MacNeice</h5>
+            <div class="poema">
+                <p><i>
+                        "Esta cidade estranha - como um rosto<br>
+                        Que você olhou para um longo tempo,<br>
+                        Mas ainda não sabe todos os seus segredos -<br>
+                        Esta cidade estranha irá roubá-lo, conquistá-lo,<br>
+                        Transformá-lo, irá surpreendê-lo, seduzi-lo,<br>
+                        Irresistivelmente."
+                    </i></p>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+<footer>André Carvalho / a22100492 / ULHT Universidade Lusófona de Humanidades e Tecnologias / 2023</footer>
+
+</html>

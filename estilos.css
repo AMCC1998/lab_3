@@ -1,0 +1,218 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    background-color: rgba(207, 207, 207, 0.249);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: center;
+}
+
+header ul{
+    max-width: 1200px;
+    background-color: rgb(35, 35, 35);
+    justify-content: space-between;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection {
+    color: white;
+    background-color: rgb(255, 183, 0);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    background-color: rgb(35, 35, 35);
+    margin: 0px;
+    padding: 0px 0px;
+    justify-content: center;
+}
+
+header ul li{
+    display: flex;
+}
+
+header ul li>a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+header ul li>a:hover:after {
+    content: "";
+    height: 1px;
+    background-color: orange;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.main-container {
+    max-width: 1000px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.wrapper-galeria:not(.wrapper-galeria--no-resize) img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.poema p::first-line {
+    font-weight: bold;
+}
+
+.default-margin-top {
+    margin-top: 3rem;
+}
+
+.area-quizz ol li.wrapper-questao {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.area-quizz ol li:first-child {
+    margin-top: 0rem;
+}
+
+.area-quizz label {
+    font-weight: 600;
+
+}
+
+.area-quizz ol li label:first-child {
+    display: block;
+}
+
+.text-align-left {
+    text-align: left;
+
+}
+
+table thead th {
+    background-color: #d5d5d5;
+}
+
+table thead th::first-letter {
+    text-transform: uppercase;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #e7e7e7;
+}
+
+table tbody tr td {
+    padding: 1rem 10px;
+    text-align: justify;
+}
+
+table tbody tr td:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+}
+
+[data="certo"] {
+    color: green;
+}
+
+[data="close"] {
+    color: red;
+}
+
+[src="images/img_1.jpeg"] {
+    box-shadow: 0px 2px 20px 5px rgb(0 0 0 / 4%);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section:last-child {
+    margin-bottom: 0px;
+}
+
+a:hover {
+    color: rgba(225, 146, 0, 0.642);
+}
+
+a:visited {
+    color: rgb(109, 109, 109);
+}
+
+a:active,
+a:hover {
+    font-weight: bold;
+}
+
+:target {
+    color: orange;
+}
+
+header a:visited {
+    color: rgb(255, 255, 255);
+}
+
+form button {
+    background-color: orange;
+    padding: 0.8rem 2rem;
+    color: white;
+    transition: all ease-in-out 0.2s;
+    border: orange;
+    font-weight: bold;
+}
+
+.display-block {
+    display: block;
+}
+
+img,
+video,
+iframe {
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background-color: rgb(135, 88, 0);
+    border: rgb(135, 88, 0);
+}
+
+form input {
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    padding: 10px 10px;
+    color: white;
+    margin-top: 3rem;
+}

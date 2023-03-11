@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Dublin | Quizz</title>
+    <meta name="author" content="André Carvalho">
+    <meta name="description"
+        content="Tudo sobre Dublin - Esta página tem como objectivo testar se o utilizador conhece bem a cidade de Dublin.">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Dublin">
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">🌏 Introdução</a>
+                </li>
+                <li>
+                    <a href="local.html">🗺️ Local</a>
+                </li>
+                <li>
+                    <a href="multimedia.html">📷 Multimedia</a>
+                </li>
+                <li>
+                    <a href="info.html">🪪 Informação</a>
+                </li>
+                <li>
+                    <a href="quizz.html">🧪 <b>Quizz</b></a>
+                </li>
+                <li>
+                    <a href="html5-css.html">👌 HTML5 e CSS</a>
+                </li>
+                <li>
+                    <a href="lab_3/index.html">📐 Lab 3</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container area-quizz">
+
+        <section style="padding-top: 6rem;">
+            <h1>Dublin</h1>
+        </section>
+        <section>
+            <h3>Quizz</h3>
+            <p>Esta página tem como objectivo testar se o utilizador conhece bem a cidade de Dublin.</p>
+        </section>
+
+        <section>
+            <form method="POST" action="mailto: 1998andrecarvalho@gmail.com" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Quizz sobre Dublin</legend>
+                    <fieldset class="text-align-left">
+                        <legend>Informações Pessoais</legend>
+                        <div class="display-block">
+                            <label for="nome">Nome </label>
+                            <input type="text" id="nome" placeholder="Nome" required size="50" autocomplete autofocus
+                                pattern="[A-Za-zÀ-ú]+">
+                            <label for="apelido">Apelido </label>
+                            <input type="text" id="apelido" placeholder="Apelido" required size="50" autocomplete
+                                pattern="[A-Za-zÀ-ú]+">
+                        </div>
+                        <label for="email">Email </label>
+                        <input type="email" id="email" placeholder="Email" required autocomplete size="50">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Perguntas</legend>
+                        <ol>
+                            <li class="wrapper-questao">
+                                <label>Qual é o rio que atravessa Dublin?</label>
+                                <ul style="list-style: lower-alpha;">
+                                    <li><input type="radio" name="rio-dublin" value="a"> <label>Shannon</label></li>
+                                    <li><input type="radio" name="rio-dublin" value="b"> <label>Liffey</label></li>
+                                    <li><input type="radio" name="rio-dublin" value="c" size="40"> <label>Boyne</label>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="wrapper-questao">
+                                <label>Qual é a capital da Irlanda?</label>
+                                <input type="text" name="capital" required>
+                            </li>
+                            <li class="wrapper-questao">
+                                <label>Qual é o maior parque de Dublin?</label>
+                                <ul style="list-style: lower-alpha;">
+                                    <li><input type="checkbox" name="maior-parque" value="a">Phoenix Park</li>
+                                    <li><input type="checkbox" name="maior-parque" value="b">St. Stephen's Green</li>
+                                    <li><input type="checkbox" name="maior-parque" value="c">Merrion Square</li>
+                                    <li><input type="checkbox" name="maior-parque" value="d">Iveagh Gardens</li>
+                                </ul>
+                            </li>
+                            <li class="wrapper-questao">
+                                <label>Qual é a universidade mais antiga de Dublin?</label>
+                                <select name="universidade-mais-antiga" multiple size="4">
+                                    <option value="a">Trinity College Dublin</option>
+                                    <option value="b">University College Dublin</option>
+                                    <option value="c">Dublin City University</option>
+                                    <option value="d">National University of Ireland, Dublin</option>
+                                </select>
+                            </li>
+                            <li class="wrapper-questao">
+                                <label>Qual é a data em que foi fundada a cidade de Dublin?</label>
+                                <input type="date" name="data-de-fundacao">
+                            </li>
+                            <li class="wrapper-questao">
+                                <label>Quais as 3 cores da badeira da Irlanda?</label>
+                                <label><input type="color" name="badeira-cor-1" size="10"></label>
+                                <label><input type="color" name="badeira-cor-2"></label>
+                                <label><input type="color" name="badeira-cor-3"></label>
+                            </li>
+                            <li class="wrapper-questao">
+                                <label>Qual o nome da ponte que está na imagem?</label>
+                                <img src="images/img_1.jpeg" loading="lazy" alt="Ponte Dublin" width="300" height="149"
+                                    aria-placeholder="Nome da Ponte">
+                                <input list="nome-ponte" id="nome-ponte-input" name="nome-ponte-input">
+                                <datalist id="nome-ponte">
+                                    <option value="Harpa - Samuel Beckett Bridge">
+                                    <option value="25 de Abril">
+                                    <option value="Imes Bridge">
+                                    <option value="Vasco da Gama">
+                                    <option value="Vanilla Bridge">
+                                </datalist>
+                            </li>
+
+                            <li class="wrapper-questao">
+                                <label>Quantos metros tem a ponte da questão anterior?</label>
+                                <input type="number" min="1" max="500" id="comprimento-ponte" name="comprimento-ponte"
+                                    size="4"> m
+                            </li>
+                            <li class="wrapper-questao">
+                                <label>Numa escala de 1 a 10, quão provavel seria visitar Dublin?</label>
+                                <input type="range" name="visitar-dublin" min="1" max="10">
+                            </li>
+                            <li class="wrapper-questao">
+                                <label class="display-block">O que achou deste Quizz?</label>
+                                <textarea rows="5" style="width: 80%;" name="opiniao"></textarea>
+                            </li>
+                        </ol>
+                        <button type="submit">Enviar Respostas</button>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+<footer>André Carvalho / a22100492 / ULHT Universidade Lusófona de Humanidades e Tecnologias / 2023</footer>
+
+</html>
